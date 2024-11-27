@@ -1,11 +1,13 @@
+#include <vector>
+#include <iostream>
+using namespace std;
+
 class Solution {
 public:
     bool containsCycle(vector<vector<char>>& grid) {
+        if (grid.empty() || grid[0].empty()) return false;
         int n=grid.size(),m=grid[0].size(),i,j;
-        vector<vector<bool>> vis(n);
-        for(i=0;i<n;i++)
-        for(j=0;j<m;j++)
-        vis[i].push_back(false);    
+        vector<vector<bool>> vis(n, vector<bool>(m, false));    
         
         bool ans=false;
         for(i=0;i<n;i++)

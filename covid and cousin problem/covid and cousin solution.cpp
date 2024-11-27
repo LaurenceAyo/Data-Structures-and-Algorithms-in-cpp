@@ -1,5 +1,15 @@
 #include<iostream>
 using namespace std;
+/**
+ * @brief Entry point of the program.
+ * 
+ * This program reads multiple test cases and for each test case, it reads the values of t, s, d, f, and b.
+ * It then calculates the minimum number of moves required to reach from position s to position d.
+ * If it is not possible to reach the destination, it outputs "Not Reachable".
+ * 
+ * @return int Returns 0 upon successful execution.
+ */
+
 int main()
 {
 int t,s,d,f,b,m,k;

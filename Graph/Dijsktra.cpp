@@ -36,7 +36,7 @@ void print(int dist[])
 	}
 } 
 
-void dijsktra(int g[][v], int s)
+void dijkstra(int g[][v], int s)
 {
 	int dist[v];
 	bool visited[v];
